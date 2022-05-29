@@ -6,6 +6,7 @@
     font-family: 'Montserrat';
 }
 
+
 header{
     position: fixed;
     background-color: white;
@@ -50,6 +51,8 @@ header li:hover{
     }
 }
 
+
+
 .texto{
     color: white;
     width: 60%;
@@ -60,6 +63,7 @@ header li:hover{
     font-weight: bold;
 }
 .fale{
+    cursor: pointer;
     text-transform: uppercase;
     margin-top: 8%;
     font-size: 1.2rem;
@@ -76,7 +80,6 @@ header li:hover{
     display: flex;
     align-items: center;
 }
-
 @media(max-width: 610px){
     .box-azul{
         align-items: flex-end;
@@ -85,36 +88,104 @@ header li:hover{
         margin-bottom: 35px;
     }
 }
+
+
 img{
     width: 290px;
-    object-fit: contain;
+    margin-top: 1em;
 }
 .line1{
-    padding: 0 5em 0 1em;
+    padding: 3em;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-around;
 }
-@media(max-width: 1330px){
+
+@media(max-width: 610px){
     .line1{
         flex-wrap: wrap;
         padding: 40px;
     }
     img{
+        width: 95%;
         margin-top: 10px;
+        margin-left: 1em;
     }
 }
+
+
 footer{
     padding: 30px;
     background-color: #E8E8E8;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 .icons{
-    background-color: blueviolet;
-    width: 35%;
+    flex-direction: row;
+    width: 25em;
 }
 .icon{
-    width: 40px;
-    margin-left: 5%;
+    vertical-align: middle;
+    width: 30px;
+    margin-left: 7%;
+    cursor: pointer;
 }
-@media(max-width: 1330px) {
-    
+footer div{
+    display: flex;
+    align-items: center;
+}
+.copy{
+    font-weight: bold;
+    width: 10%;
+}
+.layout{
+    width: 45em;
+    margin-left: 1em;
+}
+button{
+    display: none;
+}
+@media(max-width: 610px){
+    .icons{
+        background-color: #7FDBD4;
+        width: 25em;
+        padding: 4px;
+    }
+    footer{
+        flex-direction: column;
+        padding: 10px;
+    }
+    .layout{
+        width: 15em;
+        margin-left: -0.5em;
+        word-wrap: break-word;
+    }
+    .copy{
+        margin-left: -14em;
+        margin-bottom: 0.5em;
+    }
+    footer div{
+        margin-top: 1em;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+    button{
+        display: flex;
+        padding: 1em 2em;
+        background-color: #333333;
+        border: 0em;
+    }
+    a{
+        text-decoration: none;
+        color: white;
+        opacity: 0.5;
+    }
+    footer section{
+        width: 25em;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
 }
